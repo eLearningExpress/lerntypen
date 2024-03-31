@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="h-100" lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>8 VARK-Fragen</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div class="bg-dark text-secondary px-4 py-3 text-center">
+            <div class="py-1">
+                <h1 class="display-6 text-white">8 Fragen um Deinen Lerntypen zu ermitteln
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="bi bi-ui-checks-grid"
+                        viewbox="0 0 16 16">
+                        <path
+                            d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
+                    </svg>
+                </h1>
+            </div>
+        </div>
+        <form id="varkQuestionnaire" class="container mt-5">
+            <div
+                class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                <div class="list-group list-group-radio d-grid gap-2 border-0">
+
+                    <div class="question" data-question-number="1">
+                        <h4 class="text-center mb-4">1. Wenn du ein komplexes neues Thema lernst, wie bevorzugst du den Einstieg?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q1"
+                                    id="q1v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q1v">Indem ich mir Infografiken und Diagramme anschaue, die das Thema visualisieren.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q1"
+                                    id="q1a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q1a">Durch das Anhören von Podcasts oder Vorlesungen, die das Thema einführen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q1"
+                                    id="q1r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q1r">Durch das Lesen von Artikeln oder Büchern, die das Thema ausführlich behandeln.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q1"
+                                    id="q1k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q1k">Durch praktische Versuche oder Experimente, um das Thema zu erforschen.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+                    <div class="question d-none" data-question-number="2">
+                        <h4 class="text-center mb-4">2. Du bereitest dich auf eine wichtige Prüfung vor. Welche Strategie wählst du?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q2"
+                                    id="q2v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q2v">Erstellen und Verwenden von Mind-Maps, um Konzepte zu visualisieren.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q2"
+                                    id="q2a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q2a">Diskussion des Stoffes in einer Lerngruppe oder Anhören relevanter Audiobooks.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q2"
+                                    id="q2r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q2r">Anfertigen detaillierter Zusammenfassungen und Notizen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q2"
+                                    id="q2k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q2k">Anwendung des Gelernten in praktischen Übungen oder durch Lehren anderer.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="3">
+                        <h4 class="text-center mb-4">3. Wie erklärst du einem Freund ein Thema, das du gut verstehst?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q3"
+                                    id="q3v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q3v">Durch Zeichnen eines Diagramms oder einer Skizze auf einem Blatt Papier.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q3"
+                                    id="q3a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q3a">Indem ich es mündlich erkläre und Beispiele aus dem Alltag einbaue.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q3"
+                                    id="q3r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q3r">Durch das Schreiben einer detaillierten
+                                E-Mail oder Nachricht mit Schlüsselpunkten.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q3"
+                                    id="q3k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q3k">Durch das Arrangieren einer praktischen Demonstration oder eines Experiments.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="4">
+                        <h4 class="text-center mb-4">4. Was motiviert dich am meisten, wenn du online einen Kurs belegst?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q4"
+                                    id="q4v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q4v">Anschauliche Grafiken, Videos und interaktive Inhalte.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q4"
+                                    id="q4a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q4a">Engagierte Diskussionen in Foren oder mit dem Kursleiter per Audio.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q4"
+                                    id="q4r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q4r">Umfangreiche Leseaufgaben und schriftliche Übungen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q4"
+                                    id="q4k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q4k">Praktische Aufgaben, die ich selbstständig zu Hause durchführen kann.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="5">
+                        <h4 class="text-center mb-4">5. Wie merkst du dir am besten Namen und Fachbegriffe?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q5"
+                                    id="q5v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q5v">Indem ich sie in eine visuelle
+                                Assoziationskette einbinde oder mit Symbolen verknüpfe.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q5"
+                                    id="q5a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q5a">Indem ich sie laut ausspreche oder mir Reime dazu ausdenke.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q5"
+                                    id="q5r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q5r">Durch das Aufschreiben in Listen und das wiederholte Durchlesen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q5"
+                                    id="q5k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q5k">Durch das Erstellen eines physischen
+                                Spiels oder einer Aktivität, die die Begriffe verwendet.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="6">
+                        <h4 class="text-center mb-4">6. Wie bevorzugst du den Zugang zu neuen wissenschaftlichen Erkenntnissen?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q6"
+                                    id="q6v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q6v">Durch das Betrachten von Präsentationen und Diagrammen in Fachzeitschriften.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q6"
+                                    id="q6a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q6a">Durch das Anhören von Experteninterviews oder wissenschaftlichen Podcasts.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q6"
+                                    id="q6r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q6r">Durch das Lesen von wissenschaftlichen Artikeln und Reviews.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q6"
+                                    id="q6k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q6k">Durch die Teilnahme an Workshops, in denen
+                                die Erkenntnisse praktisch angewendet werden.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="7">
+                        <h4 class="text-center mb-4">7. Wenn du dich auf ein kreatives Projekt vorbereitest, wie startest du?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q7"
+                                    id="q7v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q7v">Mit einem Brainstorming und Skizzieren von Ideen auf einem visuellen Medium.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q7"
+                                    id="q7a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q7a">Durch das Sammeln von Inspirationen über Musik oder Audiobooks.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q7"
+                                    id="q7r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q7r">Durch das Recherchieren und Verfassen eines detaillierten Plans oder Konzepts.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q7"
+                                    id="q7k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q7k">Durch das direkte Experimentieren mit Materialien oder Techniken.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary next mt-3">Weiter</button>
+                    </div>
+
+                    <div class="question d-none" data-question-number="8">
+                        <h4 class="text-center mb-4">8. Was hilft dir am meisten, wenn du Feedback zu deiner Arbeit erhältst?</h4>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q8"
+                                    id="q8v"
+                                    value="V"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q8v">Grafische Darstellungen deiner
+                                Fortschritte oder Bereiche, die verbessert werden müssen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q8"
+                                    id="q8a"
+                                    value="A"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q8a">Mündliches Feedback, sei es persönlich oder über eine Sprachnachricht.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q8"
+                                    id="q8r"
+                                    value="R"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q8r">Schriftliches Feedback mit klaren Beispielen und Anleitungen.</label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text">
+                                <input
+                                    class="form-check-input mt-0"
+                                    type="radio"
+                                    name="q8"
+                                    id="q8k"
+                                    value="K"
+                                    aria-label="Radio button for following text input">
+                            </div>
+                            <label class="form-control" for="q8k">Praktische Demonstrationen oder Beispiele, wie ich meine Arbeit verbessern kann.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="evaluateResults()">Ergebnisse anzeigen</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="resultsModal"
+            tabindex="-1"
+            aria-labelledby="resultsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resultsModalLabel">Deine Ergebnisse</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Schließen"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Ergebnisse werden hier eingefügt -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="container mt-3 d-none"></div>
+        <footer class="footer mt-auto py-3 bg-dark text-center">
+            <div class="container">
+                <span class="text-light">E-Learning Express</span>
+            </div>
+        </footer>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
